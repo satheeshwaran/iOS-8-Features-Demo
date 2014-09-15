@@ -73,6 +73,7 @@
     
     // Schedule it with the app
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
     return localNotification;
 }
 
