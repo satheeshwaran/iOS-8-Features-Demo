@@ -4,8 +4,8 @@ iOS-8-Features-Demo
 A sample project that covers most new features introduced in iOS 8 and the list of changes that are needed to be done by developers to port their apps to iOS 8.
 
  1. Interactive Notifications.
- <br/>![ScreenShot](/Screenshots/1-InteractiveNotification.png)
+  <br/><a href="http://imgur.com/C8jYaqB"><img src="http://i.imgur.com/C8jYaqB.png" title="Hosted by imgur.com" /></a></img>
  2. UIAlertControllerStyleAlert
-  <br/><img src="http://i.imgur.com/laJJ6Kd.png"></img>
+  <br/><a href="http://imgur.com/MOEmLLU"><img src="http://i.imgur.com/MOEmLLU.png" title="Hosted by imgur.com"/></a></img>
  3. UIAlertControllerStyleActionSheet
-  <br/><img src="http://i.imgur.com/laJJ6Kd.png"></img>
+  <br/><a href="http://imgur.com/XaG9VTn"><img src="http://i.imgur.com/XaG9VTn.png" title="Hosted by imgur.com"/></a></img>
