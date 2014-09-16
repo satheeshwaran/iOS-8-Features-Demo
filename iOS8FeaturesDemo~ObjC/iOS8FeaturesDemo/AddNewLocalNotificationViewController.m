@@ -40,6 +40,8 @@
     
     [self scheduleNotificationOn:self.notificationFireDatePicker.date text:self.notificationTitleField.text action:self.notificationTitleField.text sound:nil launchImage:nil andInfo:nil];
     
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (UILocalNotification*) scheduleNotificationOn:(NSDate*) fireDate

@@ -22,7 +22,8 @@
     
     self.title = @"iOS 8 Features";
     
-    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only"}};
+    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only- UIMutableUserNotificationAction, UIMutableUserNotificationCategory"},@"AlertViews and ActionSheets":@{@"identifier":@"alertController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"}
+                            };
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -34,7 +35,7 @@
 #pragma mark - Table view data source
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 90;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -61,6 +62,7 @@
     
     // Display notification info
     
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     [cell.textLabel setText:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"feature"]];
     [cell.detailTextLabel setText:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"description"]];
     [cell.detailTextLabel setNumberOfLines:0];
@@ -73,6 +75,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"identifier"] sender:self];
+    UIViewController *target = [self.storyboard instantiateViewControllerWithIdentifier:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"identifier"]];
+    [self.navigationController pushViewController:target animated:YES];
+    
+    //[self performSegueWithIdentifier:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"identifier"] sender:self];
 }
 @end

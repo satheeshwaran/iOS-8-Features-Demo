@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */; };
 		A584A31019C6FEEC009B1B68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A30F19C6FEEC009B1B68 /* main.m */; };
 		A584A31319C6FEEC009B1B68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A31219C6FEEC009B1B68 /* AppDelegate.m */; };
 		A584A31619C6FEEC009B1B68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A31519C6FEEC009B1B68 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52938AE19C84DAB0040C21E /* AlertViewAndActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewAndActionSheetViewController.h; sourceTree = "<group>"; };
+		A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewAndActionSheetViewController.m; sourceTree = "<group>"; };
 		A584A30A19C6FEEC009B1B68 /* iOS8FeaturesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS8FeaturesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A584A30E19C6FEEC009B1B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A584A30F19C6FEEC009B1B68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				A584A33119C708F9009B1B68 /* LocalNotificationsViewController.m */,
 				A584A33319C70972009B1B68 /* AddNewLocalNotificationViewController.h */,
 				A584A33419C70972009B1B68 /* AddNewLocalNotificationViewController.m */,
+				A52938AE19C84DAB0040C21E /* AlertViewAndActionSheetViewController.h */,
+				A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */,
 				A584A31719C6FEEC009B1B68 /* Main.storyboard */,
 				A584A31A19C6FEEC009B1B68 /* Images.xcassets */,
 				A584A30D19C6FEEC009B1B68 /* Supporting Files */,
@@ -229,6 +234,7 @@
 				A584A33219C708F9009B1B68 /* LocalNotificationsViewController.m in Sources */,
 				A584A31319C6FEEC009B1B68 /* AppDelegate.m in Sources */,
 				A584A31019C6FEEC009B1B68 /* main.m in Sources */,
+				A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */,
 				A584A33519C70972009B1B68 /* AddNewLocalNotificationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

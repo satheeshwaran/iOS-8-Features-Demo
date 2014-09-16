@@ -38,6 +38,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -74,7 +79,6 @@
     [cell.textLabel setText:localNotification.alertBody];
     [cell.detailTextLabel setText:[localNotification.fireDate description]];
     cell.backgroundColor = [UIColor clearColor];
-    cell.detailTextLabel.textColor = cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 
