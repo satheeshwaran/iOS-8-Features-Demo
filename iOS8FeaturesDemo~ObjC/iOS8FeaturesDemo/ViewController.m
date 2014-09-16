@@ -22,8 +22,9 @@
     
     self.title = @"iOS 8 Features";
     
-    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only- UIMutableUserNotificationAction, UIMutableUserNotificationCategory"},@"AlertViews and ActionSheets":@{@"identifier":@"alertController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"}
+    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only- UIMutableUserNotificationAction, UIMutableUserNotificationCategory"},@"AlertViews and ActionSheets":@{@"identifier":@"alertController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"},@"SplitViewControllers in iPhone":@{@"identifier":@"splitViewController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"}
                             };
+    //splitViewController
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -76,6 +77,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIViewController *target = [self.storyboard instantiateViewControllerWithIdentifier:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"identifier"]];
+    
+    if([target isKindOfClass:[UISplitViewController class]])
+        [self presentViewController:target animated:YES completion:^{
+            
+        }];
+    else
     [self.navigationController pushViewController:target animated:YES];
     
     //[self performSegueWithIdentifier:[[demoViewControllers objectForKey:[demoViewControllers.allKeys objectAtIndex:indexPath.row]]objectForKey:@"identifier"] sender:self];
