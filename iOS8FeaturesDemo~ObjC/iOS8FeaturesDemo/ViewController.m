@@ -22,9 +22,9 @@
     
     self.title = @"iOS 8 Features";
     
-    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only- UIMutableUserNotificationAction, UIMutableUserNotificationCategory"},@"AlertViews and ActionSheets":@{@"identifier":@"alertController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"},@"SplitViewControllers in iPhone":@{@"identifier":@"splitViewController",@"feature":@"AlertViews and ActionSheets",@"description":@"UISplitViewController now in iPhone with iOS 8 and later"}
+    demoViewControllers = @{@"Interactive Notifications":@{@"identifier":@"localNotification",@"feature":@"Interactive Notifications",@"description":@"Helps you display notifications with quick respond buttons below the notification only- UIMutableUserNotificationAction, UIMutableUserNotificationCategory"},@"AlertViews and ActionSheets":@{@"identifier":@"alertController",@"feature":@"AlertViews and ActionSheets",@"description":@"Changes that have happened to UIAlertView and UIActionSheet- UIAlertController, UIAlertAction"},@"SplitViewControllers in iPhone":@{@"identifier":@"splitViewController",@"feature":@"AlertViews and ActionSheets",@"description":@"UISplitViewController now in iPhone with iOS 8 and later"},@"SplitViewControllers in iPhone":@{@"identifier":@"splitViewController",@"feature":@"AlertViews and ActionSheets",@"description":@"UISplitViewController now in iPhone with iOS 8 and later"},@"UIVisualEffectsView":@{@"identifier":@"visualEffectsController",@"feature":@"UIVisualEffectsView",@"description":@"An easy way to implement complex visual effects"}
                             };
-    //splitViewController
+    //visualEffectsController
     // Do any additional setup after loading the view, typically from a nib.
 }
 

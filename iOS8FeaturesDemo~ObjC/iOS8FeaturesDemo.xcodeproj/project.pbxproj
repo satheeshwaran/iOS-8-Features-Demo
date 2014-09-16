@@ -18,6 +18,7 @@
 		A584A33219C708F9009B1B68 /* LocalNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A33119C708F9009B1B68 /* LocalNotificationsViewController.m */; };
 		A584A33519C70972009B1B68 /* AddNewLocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A33419C70972009B1B68 /* AddNewLocalNotificationViewController.m */; };
 		A5FB963A19C872160096C2D3 /* SplitMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB963919C872160096C2D3 /* SplitMasterTableViewController.m */; };
+		A5FB963D19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB963C19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A584A33419C70972009B1B68 /* AddNewLocalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewLocalNotificationViewController.m; sourceTree = "<group>"; };
 		A5FB963819C872160096C2D3 /* SplitMasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitMasterTableViewController.h; sourceTree = "<group>"; };
 		A5FB963919C872160096C2D3 /* SplitMasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitMasterTableViewController.m; sourceTree = "<group>"; };
+		A5FB963B19C87C070096C2D3 /* UIVisualEffectsDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVisualEffectsDemoViewController.h; sourceTree = "<group>"; };
+		A5FB963C19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVisualEffectsDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				A51D25EB19C86B5F0088C9E7 /* SplitViewControllerDemo.m */,
 				A5FB963819C872160096C2D3 /* SplitMasterTableViewController.h */,
 				A5FB963919C872160096C2D3 /* SplitMasterTableViewController.m */,
+				A5FB963B19C87C070096C2D3 /* UIVisualEffectsDemoViewController.h */,
+				A5FB963C19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m */,
 				A584A31719C6FEEC009B1B68 /* Main.storyboard */,
 				A584A31A19C6FEEC009B1B68 /* Images.xcassets */,
 				A584A30D19C6FEEC009B1B68 /* Supporting Files */,
@@ -245,6 +250,7 @@
 				A584A33219C708F9009B1B68 /* LocalNotificationsViewController.m in Sources */,
 				A584A31319C6FEEC009B1B68 /* AppDelegate.m in Sources */,
 				A5FB963A19C872160096C2D3 /* SplitMasterTableViewController.m in Sources */,
+				A5FB963D19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m in Sources */,
 				A584A31019C6FEEC009B1B68 /* main.m in Sources */,
 				A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */,
 				A584A33519C70972009B1B68 /* AddNewLocalNotificationViewController.m in Sources */,

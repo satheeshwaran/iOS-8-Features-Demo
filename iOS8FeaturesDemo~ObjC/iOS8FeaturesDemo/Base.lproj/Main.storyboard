@@ -130,6 +130,44 @@
             </objects>
             <point key="canvasLocation" x="-367" y="1394"/>
         </scene>
+        <!--Visual Effects Demo View Controller-->
+        <scene sceneID="46t-23-Z85">
+            <objects>
+                <viewController storyboardIdentifier="visualEffectsController" id="XfX-Wu-hYl" customClass="UIVisualEffectsDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3u-hw-yMi"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVP-zq-gnh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Go1-mt-GEq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KUa-5i-HC3">
+                                <rect key="frame" x="0.0" y="452" width="320" height="29"/>
+                                <segments>
+                                    <segment title="Dark"/>
+                                    <segment title="Light"/>
+                                    <segment title="Extra Light"/>
+                                </segments>
+                                <connections>
+                                    <action selector="effectChanged:" destination="XfX-Wu-hYl" eventType="valueChanged" id="TEI-Wf-Tsb"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chelsea1" translatesAutoresizingMaskIntoConstraints="NO" id="PLu-ZA-ZlE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="452"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="effectSegment" destination="KUa-5i-HC3" id="IcI-qT-n8e"/>
+                        <outlet property="effectView" destination="PLu-ZA-ZlE" id="dx7-Od-afT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5f8-0s-sED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="1977"/>
+        </scene>
         <!--Split Master Table View Controller-->
         <scene sceneID="UiK-AK-8fA">
             <objects>
@@ -373,6 +411,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chelsea1" width="320" height="480"/>
         <image name="userpic" width="140" height="140"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
