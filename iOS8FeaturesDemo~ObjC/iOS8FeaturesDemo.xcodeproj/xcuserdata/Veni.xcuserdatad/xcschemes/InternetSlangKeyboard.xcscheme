@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5C9EAAB19CB1AF500BD4EC4"
-               BuildableName = "com.cognizantenterprisemobility.ios8featuresdemo.InternetSlangKeyboard.appex"
+               BuildableName = "com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex"
                BlueprintName = "InternetSlangKeyboard"
                ReferencedContainer = "container:iOS8FeaturesDemo.xcodeproj">
             </BuildableReference>

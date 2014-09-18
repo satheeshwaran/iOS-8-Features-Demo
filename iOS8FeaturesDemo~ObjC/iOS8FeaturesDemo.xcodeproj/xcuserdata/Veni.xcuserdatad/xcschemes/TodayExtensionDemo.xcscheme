@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A57EE7FB19C9C882006C4B75"
-               BuildableName = "com.cognizantenterprisemobility.iOS8FeaturesDemo.TodayExtensionDemo.appex"
+               BuildableName = "com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex"
                BlueprintName = "TodayExtensionDemo"
                ReferencedContainer = "container:iOS8FeaturesDemo.xcodeproj">
             </BuildableReference>
