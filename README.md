@@ -24,7 +24,9 @@ A sample project that covers most new features introduced in iOS 8 and the list 
     <br/><br/>
  <strong>Extra Light</strong>
     <br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/4-UIVisualEffectsViewExtraLight.png"/>
- <br/> <strong>5.Custom Keyboard.</strong>
+ <br/> <strong>5.Custom Keyboard Extension</strong>
  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/5-AddCustomKeyboard-InternetSlangKeyboard.png"/>
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/5-AddNewKeyboard-SlangKeyboard.png"/> 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/5-CustomKeyboard-SlangKeyboard.png"/>
+ <br/> <strong>6.Today Extension.</strong>
+ <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/6-TodayExtension-WeatherUpdate.png"/>
