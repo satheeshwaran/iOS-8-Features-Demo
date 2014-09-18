@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>InternetSlangKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TodayExtensionDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>iOS8FeaturesDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,12 +22,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A57EE7CB19C9C486006C4B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A57EE7E319C9C5D5006C4B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A57EE7FB19C9C882006C4B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A584A30919C6FEEC009B1B68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A584A31F19C6FEEC009B1B68</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5C9EAAB19CB1AF500BD4EC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

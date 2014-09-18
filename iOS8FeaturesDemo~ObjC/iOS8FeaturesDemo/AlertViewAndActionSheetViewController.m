@@ -26,6 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"Alert Controller";
+
     // Do any additional setup after loading the view.
 }
 
@@ -94,6 +97,20 @@
     [self presentViewController:alertController animated:YES completion:^{
         
     }];}
+
+
+- (IBAction)showPopOver:(id)sender {
+    
+    UIViewController *contentController = [[UIViewController alloc]init];
+    contentController.view.backgroundColor = [UIColor redColor];
+    
+    contentController.modalPresentationStyle = UIModalPresentationPopover;
+    
+    UIPopoverPresentationController *popPC =
+    contentController.popoverPresentationController;
+    popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    [self presentViewController:contentController animated:YES completion:nil];
+}
 
 /*
 #pragma mark - Navigation

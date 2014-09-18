@@ -28,6 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"Add New Notification";
+
     // Do any additional setup after loading the view.
 }
 

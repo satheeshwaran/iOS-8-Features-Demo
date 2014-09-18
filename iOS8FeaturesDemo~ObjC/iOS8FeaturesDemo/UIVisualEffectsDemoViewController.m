@@ -13,7 +13,6 @@
     UIBlurEffect *visualEffect;
     UIVisualEffectView *visualEffectView;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *effectView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *effectSegment;
 
 @end
@@ -24,7 +23,13 @@
 {
     [super viewDidLoad];
     
+    UIImageView *effectView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64-self.effectSegment.frame.size.height)];
+    [effectView setImage:[UIImage imageNamed:@"chelsea1"]];
     
+    [self.view addSubview:effectView];
+    
+    self.title = @"Visual Effects";
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -55,11 +60,20 @@
     else if(self.effectSegment.selectedSegmentIndex == 2)
     {
         visualEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+        
     }
     
     visualEffectView = [[UIVisualEffectView alloc]initWithEffect:visualEffect];
     
-    visualEffectView.frame=self.effectView.frame;
+    CGRect frame = self.view.frame;
+    frame.size.height -= self.effectSegment.frame.size.height;
+    
+    visualEffectView.frame=frame;
+    
+    UIImageView *effectView = [[UIImageView alloc]initWithFrame:visualEffectView.frame];
+    [effectView setImage:[UIImage imageNamed:@"chelsea1"]];
+    
+    [self.view addSubview:effectView];
     
     [self.view addSubview:visualEffectView];
 }

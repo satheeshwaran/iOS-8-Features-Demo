@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherBG" translatesAutoresizingMaskIntoConstraints="NO" id="6Kz-49-ms5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather-broken" translatesAutoresizingMaskIntoConstraints="NO" id="3q5-Xo-sCq">
+                                <rect key="frame" x="20" y="4" width="30" height="30"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sky Is Clear" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="254" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="58" y="8" width="254" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="0Q0-KW-PJ6"/>
+                            <constraint firstAttribute="trailing" secondItem="6Kz-49-ms5" secondAttribute="trailing" id="6Ov-kf-G4W"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="58" id="6Vq-gs-PHe"/>
+                            <constraint firstItem="6Kz-49-ms5" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="B6A-LS-hQl"/>
+                            <constraint firstItem="6Kz-49-ms5" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="IYy-cV-tSE"/>
+                            <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="8" id="L8K-9R-egU"/>
+                            <constraint firstItem="6Kz-49-ms5" firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" id="Lds-Bu-O02"/>
+                            <constraint firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="8" id="PpO-XR-tWd"/>
+                            <constraint firstAttribute="bottom" secondItem="3q5-Xo-sCq" secondAttribute="bottom" constant="3" id="Uv7-NH-czt"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="3q5-Xo-sCq" secondAttribute="trailing" constant="8" symbolic="YES" id="c5y-j7-DLY"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="3q5-Xo-sCq" secondAttribute="bottom" constant="3" id="hdt-8y-D8a"/>
+                            <constraint firstItem="3q5-Xo-sCq" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="4" id="kqc-Ll-CC2"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="6Kz-49-ms5" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="oiV-AW-agZ"/>
+                            <constraint firstItem="6Kz-49-ms5" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="rpf-Nq-JMT"/>
+                            <constraint firstItem="3q5-Xo-sCq" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" symbolic="YES" id="sUn-rX-iT2"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="weatherConditionImage" destination="3q5-Xo-sCq" id="bRf-Ka-7G6"/>
+                        <outlet property="weatherConditionLabel" destination="GcN-lo-r42" id="qjy-qu-KYY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="83.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weather-broken" width="32" height="32"/>
+        <image name="weatherBG" width="640" height="427"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
