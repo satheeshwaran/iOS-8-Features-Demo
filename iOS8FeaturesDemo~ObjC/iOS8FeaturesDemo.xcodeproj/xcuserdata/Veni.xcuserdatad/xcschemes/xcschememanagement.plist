@@ -7,17 +7,27 @@
 		<key>InternetSlangKeyboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>TodayExtensionDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+		<key>TranslateActionDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>iOS8FeaturesDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<key>iOS8FeaturesDemoTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -47,7 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A586EB9A19CC5BAA005A215A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5C9EAAB19CB1AF500BD4EC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5C9EAD119CB254500BD4EC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5C9EAE019CB254600BD4EC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

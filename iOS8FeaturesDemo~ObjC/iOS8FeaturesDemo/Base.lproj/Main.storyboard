@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="orS-M5-ZQq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="orS-M5-ZQq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="-2060" y="-17"/>
         </scene>
-        <!--Local Notifications View Controller - Notifications-->
+        <!--Notifications-->
         <scene sceneID="Pkx-UC-Ymt">
             <objects>
                 <tableViewController storyboardIdentifier="localNotification" id="7ue-zE-Mgk" customClass="LocalNotificationsViewController" sceneMemberID="viewController">
@@ -267,6 +267,72 @@
             </objects>
             <point key="canvasLocation" x="-367" y="3200"/>
         </scene>
+        <!--Action Extension Demo View Controller-->
+        <scene sceneID="Rbj-ee-pSD">
+            <objects>
+                <viewController storyboardIdentifier="translationController" id="pfK-mn-ob3" customClass="ActionExtensionDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LDW-hC-3Im"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pe8-Wb-VXb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBz-PD-Y6G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oqN-4t-wPN">
+                                <rect key="frame" x="161" y="258" width="159" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pfK-mn-ob3" id="cRq-fM-m4g"/>
+                                    <outlet property="delegate" destination="pfK-mn-ob3" id="Nq4-cy-8dl"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYA-ld-kUi">
+                                <rect key="frame" x="74" y="430" width="173" height="30"/>
+                                <state key="normal" title="Translate!!!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="translatePressed:" destination="pfK-mn-ob3" eventType="touchUpInside" id="gwA-LA-qdd"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-UE-kdm">
+                                <rect key="frame" x="0.0" y="258" width="153" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pfK-mn-ob3" id="sBW-AP-xNj"/>
+                                    <outlet property="delegate" destination="pfK-mn-ob3" id="aSN-yn-1qo"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjp-v1-Axc">
+                                <rect key="frame" x="16" y="229" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcS-M5-E26">
+                                <rect key="frame" x="176" y="229" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Love is everywhere but we are too blind to see it!" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-o5-5m5">
+                                <rect key="frame" x="16" y="61" width="288" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="sourceLanguagePicker" destination="SW3-UE-kdm" id="Ggz-5h-w66"/>
+                        <outlet property="sourceTextView" destination="Wes-o5-5m5" id="QWw-2r-AAo"/>
+                        <outlet property="targetLanguagePicker" destination="oqN-4t-wPN" id="R5r-YU-UnO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dA-32-YK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="3738"/>
+        </scene>
         <!--Split Master Table View Controller-->
         <scene sceneID="UiK-AK-8fA">
             <objects>
@@ -278,7 +344,7 @@
                         <sections>
                             <tableViewSection id="tLh-b4-cto">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="v2c-mB-XGw" imageView="R4t-MB-5WL" rowHeight="80" style="IBUITableViewCellStyleDefault" id="TqT-co-XOE">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="v2c-mB-XGw" imageView="R4t-MB-5WL" rowHeight="80" style="IBUITableViewCellStyleDefault" id="TqT-co-XOE">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TqT-co-XOE" id="aNI-Xk-PMM">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -295,7 +361,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MSD-dj-aUa" imageView="MPY-YA-YU3" rowHeight="80" style="IBUITableViewCellStyleDefault" id="I7Q-u3-iia">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MSD-dj-aUa" imageView="MPY-YA-YU3" rowHeight="80" style="IBUITableViewCellStyleDefault" id="I7Q-u3-iia">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I7Q-u3-iia" id="DTd-SD-SDJ">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -312,7 +378,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B7p-gs-3AZ" imageView="3of-KA-J50" rowHeight="80" style="IBUITableViewCellStyleDefault" id="lVW-4l-hKQ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="B7p-gs-3AZ" imageView="3of-KA-J50" rowHeight="80" style="IBUITableViewCellStyleDefault" id="lVW-4l-hKQ">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lVW-4l-hKQ" id="u2G-yJ-rRm">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -329,7 +395,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uz5-kP-gFF" imageView="hSe-Lz-bDj" rowHeight="80" style="IBUITableViewCellStyleDefault" id="oDL-LZ-8zl">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Uz5-kP-gFF" imageView="hSe-Lz-bDj" rowHeight="80" style="IBUITableViewCellStyleDefault" id="oDL-LZ-8zl">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oDL-LZ-8zl" id="8B3-3R-slB">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -346,7 +412,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xBt-g9-coj" imageView="Tsy-ea-VR3" rowHeight="80" style="IBUITableViewCellStyleDefault" id="H35-Ch-gpb">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xBt-g9-coj" imageView="Tsy-ea-VR3" rowHeight="80" style="IBUITableViewCellStyleDefault" id="H35-Ch-gpb">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H35-Ch-gpb" id="2qh-9w-FOG">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -412,7 +478,7 @@
             </objects>
             <point key="canvasLocation" x="-813" y="1098"/>
         </scene>
-        <!--Add New Local Notification View Controller - Add New Notification-->
+        <!--Add New Notification-->
         <scene sceneID="RXK-Jq-S2x">
             <objects>
                 <viewController id="m8e-A2-19d" customClass="AddNewLocalNotificationViewController" sceneMemberID="viewController">
@@ -451,7 +517,7 @@
                                 <color key="backgroundColor" red="0.56862745100000001" green="0.20000000000000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <date key="date" timeIntervalSinceReferenceDate="392441794.414074">
-                                    <!--<__NSDate Class=2013-06-09 03:36:34 +0000 timeInterval=392441794.414074 ISO8601=2013-06-09T09:06:34.414+0530>-->
+                                    <!--2013-06-09 03:36:34 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>

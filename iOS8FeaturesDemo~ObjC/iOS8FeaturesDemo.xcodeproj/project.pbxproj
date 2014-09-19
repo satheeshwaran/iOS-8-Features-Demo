@@ -47,6 +47,10 @@
 		A584A32719C6FEEC009B1B68 /* iOS8FeaturesDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A32619C6FEEC009B1B68 /* iOS8FeaturesDemoTests.m */; };
 		A584A33219C708F9009B1B68 /* LocalNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A33119C708F9009B1B68 /* LocalNotificationsViewController.m */; };
 		A584A33519C70972009B1B68 /* AddNewLocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A584A33419C70972009B1B68 /* AddNewLocalNotificationViewController.m */; };
+		A586EBA119CC5BAB005A215A /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A586EBA019CC5BAB005A215A /* ActionViewController.m */; };
+		A586EBA319CC5BAB005A215A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586EBA219CC5BAB005A215A /* MainInterface.storyboard */; };
+		A586EBA619CC5BAB005A215A /* TranslateActionDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A586EBAE19CC606B005A215A /* ActionExtensionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A586EBAD19CC606B005A215A /* ActionExtensionDemoViewController.m */; };
 		A5C9EAB519CB1AF600BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5C9EAAC19CB1AF500BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex */; };
 		A5C9EACB19CB1D2000BD4EC4 /* CustomKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C9EAC619CB1D2000BD4EC4 /* CustomKeyBoardView.xib */; };
 		A5C9EACC19CB1D2000BD4EC4 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C9EAC819CB1D2000BD4EC4 /* KeyboardViewController.m */; };
@@ -92,6 +96,20 @@
 			remoteGlobalIDString = A584A30919C6FEEC009B1B68;
 			remoteInfo = iOS8FeaturesDemo;
 		};
+		A586EBA419CC5BAB005A215A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A586EB9A19CC5BAA005A215A;
+			remoteInfo = TranslateActionDemo;
+		};
+		A586EBA719CC5BAB005A215A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A586EB9A19CC5BAA005A215A;
+			remoteInfo = TranslateActionDemo;
+		};
 		A5C9EAB319CB1AF600BD4EC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
@@ -116,6 +134,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				A5C9EAB519CB1AF600BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex in Embed App Extensions */,
+				A586EBA619CC5BAB005A215A /* TranslateActionDemo.appex in Embed App Extensions */,
 				A57EE80819C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -179,6 +198,13 @@
 		A584A33119C708F9009B1B68 /* LocalNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationsViewController.m; sourceTree = "<group>"; };
 		A584A33319C70972009B1B68 /* AddNewLocalNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewLocalNotificationViewController.h; sourceTree = "<group>"; };
 		A584A33419C70972009B1B68 /* AddNewLocalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewLocalNotificationViewController.m; sourceTree = "<group>"; };
+		A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TranslateActionDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586EB9E19CC5BAB005A215A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A586EB9F19CC5BAB005A215A /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		A586EBA019CC5BAB005A215A /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		A586EBA219CC5BAB005A215A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		A586EBAC19CC606B005A215A /* ActionExtensionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionExtensionDemoViewController.h; sourceTree = "<group>"; };
+		A586EBAD19CC606B005A215A /* ActionExtensionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionExtensionDemoViewController.m; sourceTree = "<group>"; };
 		A5C9EAAC19CB1AF500BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C9EAAF19CB1AF600BD4EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C9EAC619CB1D2000BD4EC4 /* CustomKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomKeyBoardView.xib; sourceTree = "<group>"; };
@@ -211,6 +237,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A584A31D19C6FEEC009B1B68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586EB9819CC5BAA005A215A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +310,7 @@
 			children = (
 				A57EE7FE19C9C882006C4B75 /* TodayExtensionDemo */,
 				A5C9EAAD19CB1AF600BD4EC4 /* InternetSlangKeyboard */,
+				A586EB9C19CC5BAB005A215A /* TranslateActionDemo */,
 				A5D00D5019C96C0D00B9C669 /* Frameworks */,
 				A584A30C19C6FEEC009B1B68 /* iOS8FeaturesDemo */,
 				A584A32319C6FEEC009B1B68 /* iOS8FeaturesDemoTests */,
@@ -291,6 +325,7 @@
 				A584A32019C6FEEC009B1B68 /* iOS8FeaturesDemoTests.xctest */,
 				A57EE7FC19C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex */,
 				A5C9EAAC19CB1AF500BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex */,
+				A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +354,8 @@
 				A5D00D4B19C96AF700B9C669 /* ToucIDDemoViewController.m */,
 				A57EE7F519C9C80F006C4B75 /* TodayExtensionDemoViewController.h */,
 				A57EE7F619C9C80F006C4B75 /* TodayExtensionDemoViewController.m */,
+				A586EBAC19CC606B005A215A /* ActionExtensionDemoViewController.h */,
+				A586EBAD19CC606B005A215A /* ActionExtensionDemoViewController.m */,
 				A584A31719C6FEEC009B1B68 /* Main.storyboard */,
 				A584A31A19C6FEEC009B1B68 /* Images.xcassets */,
 				A584A30D19C6FEEC009B1B68 /* Supporting Files */,
@@ -348,6 +385,25 @@
 			isa = PBXGroup;
 			children = (
 				A584A32519C6FEEC009B1B68 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A586EB9C19CC5BAB005A215A /* TranslateActionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A586EB9F19CC5BAB005A215A /* ActionViewController.h */,
+				A586EBA019CC5BAB005A215A /* ActionViewController.m */,
+				A586EBA219CC5BAB005A215A /* MainInterface.storyboard */,
+				A586EB9D19CC5BAB005A215A /* Supporting Files */,
+			);
+			path = TranslateActionDemo;
+			sourceTree = "<group>";
+		};
+		A586EB9D19CC5BAB005A215A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A586EB9E19CC5BAB005A215A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -417,6 +473,8 @@
 				A57EE80A19C9C882006C4B75 /* PBXTargetDependency */,
 				A5C9EAB419CB1AF600BD4EC4 /* PBXTargetDependency */,
 				A5C9EAB719CB1AF600BD4EC4 /* PBXTargetDependency */,
+				A586EBA519CC5BAB005A215A /* PBXTargetDependency */,
+				A586EBA819CC5BAB005A215A /* PBXTargetDependency */,
 			);
 			name = iOS8FeaturesDemo;
 			productName = iOS8FeaturesDemo;
@@ -442,6 +500,23 @@
 			productName = iOS8FeaturesDemoTests;
 			productReference = A584A32019C6FEEC009B1B68 /* iOS8FeaturesDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A586EB9A19CC5BAA005A215A /* TranslateActionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A586EBAB19CC5BAB005A215A /* Build configuration list for PBXNativeTarget "TranslateActionDemo" */;
+			buildPhases = (
+				A586EB9719CC5BAA005A215A /* Sources */,
+				A586EB9819CC5BAA005A215A /* Frameworks */,
+				A586EB9919CC5BAA005A215A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranslateActionDemo;
+			productName = TranslateActionDemo;
+			productReference = A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		A5C9EAAB19CB1AF500BD4EC4 /* InternetSlangKeyboard */ = {
 			isa = PBXNativeTarget;
@@ -491,6 +566,10 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = A584A30919C6FEEC009B1B68;
 					};
+					A586EB9A19CC5BAA005A215A = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = LSVVD8ZPH6;
+					};
 					A5C9EAAB19CB1AF500BD4EC4 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = LSVVD8ZPH6;
@@ -514,6 +593,7 @@
 				A584A31F19C6FEEC009B1B68 /* iOS8FeaturesDemoTests */,
 				A57EE7FB19C9C882006C4B75 /* TodayExtensionDemo */,
 				A5C9EAAB19CB1AF500BD4EC4 /* InternetSlangKeyboard */,
+				A586EB9A19CC5BAA005A215A /* TranslateActionDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -568,6 +648,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A586EB9919CC5BAA005A215A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586EBA319CC5BAB005A215A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5C9EAAA19CB1AF500BD4EC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,6 +688,7 @@
 				A5FB963D19C87C070096C2D3 /* UIVisualEffectsDemoViewController.m in Sources */,
 				A584A31019C6FEEC009B1B68 /* main.m in Sources */,
 				A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */,
+				A586EBAE19CC606B005A215A /* ActionExtensionDemoViewController.m in Sources */,
 				A57EE7F719C9C80F006C4B75 /* TodayExtensionDemoViewController.m in Sources */,
 				A584A33519C70972009B1B68 /* AddNewLocalNotificationViewController.m in Sources */,
 			);
@@ -610,6 +699,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A584A32719C6FEEC009B1B68 /* iOS8FeaturesDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586EB9719CC5BAA005A215A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586EBA119CC5BAB005A215A /* ActionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +746,16 @@
 			isa = PBXTargetDependency;
 			target = A584A30919C6FEEC009B1B68 /* iOS8FeaturesDemo */;
 			targetProxy = A584A32119C6FEEC009B1B68 /* PBXContainerItemProxy */;
+		};
+		A586EBA519CC5BAB005A215A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A586EB9A19CC5BAA005A215A /* TranslateActionDemo */;
+			targetProxy = A586EBA419CC5BAB005A215A /* PBXContainerItemProxy */;
+		};
+		A586EBA819CC5BAB005A215A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A586EB9A19CC5BAA005A215A /* TranslateActionDemo */;
+			targetProxy = A586EBA719CC5BAB005A215A /* PBXContainerItemProxy */;
 		};
 		A5C9EAB419CB1AF600BD4EC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -852,6 +959,36 @@
 			};
 			name = Release;
 		};
+		A586EBA919CC5BAB005A215A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TranslateActionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A586EBAA19CC5BAB005A215A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TranslateActionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A5C9EAB919CB1AF600BD4EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -921,6 +1058,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A586EBAB19CC5BAB005A215A /* Build configuration list for PBXNativeTarget "TranslateActionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A586EBA919CC5BAB005A215A /* Debug */,
+				A586EBAA19CC5BAB005A215A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A5C9EAB819CB1AF600BD4EC4 /* Build configuration list for PBXNativeTarget "InternetSlangKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -928,6 +1073,7 @@
 				A5C9EABA19CB1AF600BD4EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
