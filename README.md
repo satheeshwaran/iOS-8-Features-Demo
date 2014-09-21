@@ -29,9 +29,10 @@ A sample project that covers most new features introduced in iOS 8 and the list 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/5-CustomKeyboard-SlangKeyboard.png"/>
  <br/><br/><strong>6.Today Extension.</strong>
  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/6-TodayExtension-WeatherUpdate.png"/>
-<br/><br/> <strong>5.Action Extension</strong>
- <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionReturningData.png"/>
-  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionView.png"/> 
+<br/><br/> <strong>7.Action Extension</strong>
+    <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationExtension.png"/> 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationExtension-Selection.png"/>
-   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationExtension.png"/> 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationExtensionActionDisplayed.png"/>
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionView.png"/> 
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionReturningData.png"/>
+  
