@@ -21,8 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    self.title = @"Action Extension";
+    
     self.languages = [[NSMutableArray alloc]initWithArray:[NSLocale preferredLanguages]];
     
+    
+    [self.sourceTextView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.sourceTextView.layer setBorderWidth:1];
+    [self.sourceTextView.layer setCornerRadius:5];
     // Do any additional setup after loading the view.
 }
 
@@ -42,7 +49,20 @@
         
         NSLog(@"returned Items: %@",returnedItems);
         
+        NSExtensionItem *returnedItem = [returnedItems objectAtIndex:0];
         
+        
+        UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Recieved translated text from extension" message:returnedItem.attributedContentText.string preferredStyle:UIAlertControllerStyleAlert];
+        
+        [alertView addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+            
+            [self.sourceTextView setText:returnedItem.attributedContentText.string];
+
+        }]];
+        
+        [self presentViewController:alertView animated:YES completion:^{
+            
+        }];
     
     }];
 

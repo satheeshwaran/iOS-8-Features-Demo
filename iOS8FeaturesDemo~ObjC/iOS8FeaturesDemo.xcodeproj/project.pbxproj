@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EDA0AE119CF440900F89E40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
 		A51D25EC19C86B5F0088C9E7 /* SplitViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D25EB19C86B5F0088C9E7 /* SplitViewControllerDemo.m */; };
 		A523E82619CAC44700460AA1 /* weatherBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A523E82519CAC44700460AA1 /* weatherBG.jpg */; };
 		A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */; };
@@ -653,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A586EBA319CC5BAB005A215A /* MainInterface.storyboard in Resources */,
+				8EDA0AE119CF440900F89E40 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +964,8 @@
 		A586EBA919CC5BAB005A215A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -979,6 +983,8 @@
 		A586EBAA19CC5BAB005A215A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TranslateActionDemo/Info.plist;
@@ -1065,6 +1071,7 @@
 				A586EBAA19CC5BAB005A215A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C9EAB819CB1AF600BD4EC4 /* Build configuration list for PBXNativeTarget "InternetSlangKeyboard" */ = {
 			isa = XCConfigurationList;

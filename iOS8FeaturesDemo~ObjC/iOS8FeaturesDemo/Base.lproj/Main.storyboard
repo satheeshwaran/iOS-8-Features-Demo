@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="orS-M5-ZQq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="orS-M5-ZQq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -279,14 +280,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oqN-4t-wPN">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqN-4t-wPN">
                                 <rect key="frame" x="161" y="258" width="159" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pfK-mn-ob3" id="cRq-fM-m4g"/>
                                     <outlet property="delegate" destination="pfK-mn-ob3" id="Nq4-cy-8dl"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYA-ld-kUi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYA-ld-kUi">
                                 <rect key="frame" x="74" y="430" width="173" height="30"/>
                                 <state key="normal" title="Translate!!!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,33 +296,56 @@
                                     <action selector="translatePressed:" destination="pfK-mn-ob3" eventType="touchUpInside" id="gwA-LA-qdd"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-UE-kdm">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-UE-kdm">
                                 <rect key="frame" x="0.0" y="258" width="153" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pfK-mn-ob3" id="sBW-AP-xNj"/>
                                     <outlet property="delegate" destination="pfK-mn-ob3" id="aSN-yn-1qo"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjp-v1-Axc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjp-v1-Axc">
                                 <rect key="frame" x="16" y="229" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcS-M5-E26">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcS-M5-E26">
                                 <rect key="frame" x="176" y="229" width="128" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Love is everywhere but we are too blind to see it!" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-o5-5m5">
-                                <rect key="frame" x="16" y="61" width="288" height="135"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Love is everywhere but we are too blind to see it!" translatesAutoresizingMaskIntoConstraints="NO" id="Wes-o5-5m5">
+                                <rect key="frame" x="16" y="80" width="288" height="116"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oqN-4t-wPN" secondAttribute="trailing" id="7UI-Xm-fLH"/>
+                            <constraint firstItem="oqN-4t-wPN" firstAttribute="top" secondItem="SW3-UE-kdm" secondAttribute="top" id="86d-hN-xkM"/>
+                            <constraint firstItem="SW3-UE-kdm" firstAttribute="top" secondItem="xBz-PD-Y6G" secondAttribute="top" constant="258" id="8Qy-sp-2Rm"/>
+                            <constraint firstItem="Wes-o5-5m5" firstAttribute="centerX" secondItem="CYA-ld-kUi" secondAttribute="centerX" id="AcB-20-aec"/>
+                            <constraint firstItem="mcS-M5-E26" firstAttribute="baseline" secondItem="hjp-v1-Axc" secondAttribute="baseline" id="CZR-YI-nwL"/>
+                            <constraint firstAttribute="bottom" secondItem="CYA-ld-kUi" secondAttribute="bottom" constant="20" symbolic="YES" id="CeE-1E-P0t"/>
+                            <constraint firstItem="hjp-v1-Axc" firstAttribute="leading" secondItem="xBz-PD-Y6G" secondAttribute="leadingMargin" id="G4E-uC-D2v"/>
+                            <constraint firstItem="oqN-4t-wPN" firstAttribute="centerX" secondItem="mcS-M5-E26" secondAttribute="centerX" id="GuS-gv-0Eq"/>
+                            <constraint firstItem="hjp-v1-Axc" firstAttribute="top" secondItem="Wes-o5-5m5" secondAttribute="bottom" constant="33" id="Kna-iD-yS9"/>
+                            <constraint firstItem="oqN-4t-wPN" firstAttribute="leading" secondItem="SW3-UE-kdm" secondAttribute="trailing" constant="8" symbolic="YES" id="Pij-4x-ACS"/>
+                            <constraint firstItem="oqN-4t-wPN" firstAttribute="top" secondItem="xBz-PD-Y6G" secondAttribute="top" constant="258" id="QvA-of-Nl8"/>
+                            <constraint firstItem="oqN-4t-wPN" firstAttribute="trailing" secondItem="Pe8-Wb-VXb" secondAttribute="trailing" id="aeH-TT-nwN"/>
+                            <constraint firstItem="Wes-o5-5m5" firstAttribute="top" secondItem="LDW-hC-3Im" secondAttribute="bottom" constant="60" id="dt2-Fl-UUs"/>
+                            <constraint firstItem="SW3-UE-kdm" firstAttribute="top" secondItem="hjp-v1-Axc" secondAttribute="bottom" constant="8" symbolic="YES" id="euz-gE-gAQ"/>
+                            <constraint firstItem="CYA-ld-kUi" firstAttribute="top" secondItem="SW3-UE-kdm" secondAttribute="bottom" constant="10" id="fJH-Ht-99A"/>
+                            <constraint firstItem="CYA-ld-kUi" firstAttribute="leading" secondItem="xBz-PD-Y6G" secondAttribute="leadingMargin" constant="58" id="jnw-OW-iA6"/>
+                            <constraint firstItem="SW3-UE-kdm" firstAttribute="leading" secondItem="Pe8-Wb-VXb" secondAttribute="leading" id="kH8-s7-zsb"/>
+                            <constraint firstItem="mcS-M5-E26" firstAttribute="trailing" secondItem="xBz-PD-Y6G" secondAttribute="trailingMargin" id="lF4-c0-vEa"/>
+                            <constraint firstItem="hjp-v1-Axc" firstAttribute="leading" secondItem="Wes-o5-5m5" secondAttribute="leading" id="nzq-mw-c7h"/>
+                            <constraint firstItem="SW3-UE-kdm" firstAttribute="leading" secondItem="xBz-PD-Y6G" secondAttribute="leading" id="pxx-FU-HgC"/>
+                            <constraint firstItem="Wes-o5-5m5" firstAttribute="trailing" secondItem="mcS-M5-E26" secondAttribute="trailing" id="tgd-3L-KkK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="sourceLanguagePicker" destination="SW3-UE-kdm" id="Ggz-5h-w66"/>

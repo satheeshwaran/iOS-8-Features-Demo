@@ -27,6 +27,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    [self.sourceText.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.sourceText.layer setBorderWidth:1];
+    [self.sourceText.layer setCornerRadius:5];
+    
+    
+    [self.targetText.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.targetText.layer setBorderWidth:1];
+    [self.targetText.layer setCornerRadius:5];
     // Get the item[s] we're handling from the extension context.
     
     for (NSExtensionItem *item in self.extensionContext.inputItems) {
@@ -105,7 +114,7 @@
     NSExtensionItem *extensionItem = [[NSExtensionItem alloc]init];
     [extensionItem setAttributedTitle:[[NSAttributedString alloc]initWithString:@"Translated String"]];
     [extensionItem setAttributedContentText:[[NSAttributedString alloc]initWithString:self.targetText.text]];
-    [self.extensionContext completeRequestReturningItems:self.extensionContext.inputItems completionHandler:nil];
+    [self.extensionContext completeRequestReturningItems:@[extensionItem] completionHandler:nil];
 }
 
 @end

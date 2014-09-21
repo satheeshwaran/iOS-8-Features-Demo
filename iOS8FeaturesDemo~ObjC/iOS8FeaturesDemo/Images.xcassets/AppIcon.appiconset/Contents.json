@@ -1,13 +1,45 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "58.png",
       "scale" : "2x"
     },
     {
+      "size" : "29x29",
       "idiom" : "iphone",
+      "filename" : "116.png",
+      "scale" : "3x"
+    },
+    {
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "160.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "240.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "57.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "114.png",
       "scale" : "2x"
     },
     {
@@ -15,6 +47,12 @@
       "idiom" : "iphone",
       "filename" : "iOS-8-Logo-2.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "240-1.png",
+      "scale" : "3x"
     }
   ],
   "info" : {
