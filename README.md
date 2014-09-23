@@ -35,4 +35,9 @@ A sample project that covers most new features introduced in iOS 8 and the list 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationExtensionActionDisplayed.png"/>
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionView.png"/> 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/7-TranslationActionReturningData.png"/>
-  
+  <br/><br/> <strong>8.Share Extension</strong>
+    <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItem-Listed.png"/> 
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemCompletionCheck.png"/>
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemCompletionHandler.png"/>
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemComposerView.png"/> 
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemConfigurationItem.png"/>
