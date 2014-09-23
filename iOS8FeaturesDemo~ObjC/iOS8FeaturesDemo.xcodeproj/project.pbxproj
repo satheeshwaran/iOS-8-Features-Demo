@@ -11,6 +11,15 @@
 		A51D25EC19C86B5F0088C9E7 /* SplitViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A51D25EB19C86B5F0088C9E7 /* SplitViewControllerDemo.m */; };
 		A523E82619CAC44700460AA1 /* weatherBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A523E82519CAC44700460AA1 /* weatherBG.jpg */; };
 		A52938B019C84DAB0040C21E /* AlertViewAndActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */; };
+		A539313819D1462300072A6C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539313719D1462300072A6C /* ShareViewController.m */; };
+		A539313A19D1462300072A6C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539313919D1462300072A6C /* MainInterface.storyboard */; };
+		A539313D19D1462300072A6C /* Anonymous.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539313219D1462300072A6C /* Anonymous.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A539314519D146E600072A6C /* MLIMGURUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = A539314419D146E600072A6C /* MLIMGURUploader.m */; };
+		A539314619D14EA600072A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
+		A539314719D14EA800072A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
+		A539314819D14EA900072A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
+		A539314B19D17B0300072A6C /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539314A19D17B0200072A6C /* DescriptionViewController.m */; };
+		A539314E19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */; };
 		A57EE7F719C9C80F006C4B75 /* TodayExtensionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57EE7F619C9C80F006C4B75 /* TodayExtensionDemoViewController.m */; };
 		A57EE7FD19C9C882006C4B75 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57EE7CD19C9C486006C4B75 /* NotificationCenter.framework */; };
 		A57EE80819C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A57EE7FC19C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex */; };
@@ -62,6 +71,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A539313B19D1462300072A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539313119D1462300072A6C;
+			remoteInfo = Anonymous;
+		};
+		A539313E19D1462300072A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539313119D1462300072A6C;
+			remoteInfo = Anonymous;
+		};
 		A57EE80619C9C882006C4B75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
@@ -134,6 +157,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				A539313D19D1462300072A6C /* Anonymous.appex in Embed App Extensions */,
 				A5C9EAB519CB1AF600BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex in Embed App Extensions */,
 				A586EBA619CC5BAB005A215A /* TranslateActionDemo.appex in Embed App Extensions */,
 				A57EE80819C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex in Embed App Extensions */,
@@ -149,6 +173,17 @@
 		A523E82519CAC44700460AA1 /* weatherBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weatherBG.jpg; sourceTree = "<group>"; };
 		A52938AE19C84DAB0040C21E /* AlertViewAndActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewAndActionSheetViewController.h; sourceTree = "<group>"; };
 		A52938AF19C84DAB0040C21E /* AlertViewAndActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewAndActionSheetViewController.m; sourceTree = "<group>"; };
+		A539313219D1462300072A6C /* Anonymous.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Anonymous.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539313519D1462300072A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539313619D1462300072A6C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		A539313719D1462300072A6C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		A539313919D1462300072A6C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		A539314319D146E600072A6C /* MLIMGURUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLIMGURUploader.h; sourceTree = "<group>"; };
+		A539314419D146E600072A6C /* MLIMGURUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLIMGURUploader.m; sourceTree = "<group>"; };
+		A539314919D17B0200072A6C /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
+		A539314A19D17B0200072A6C /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
+		A539314C19D18C4C00072A6C /* UINavigationBar+iOS8Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+iOS8Demo.h"; sourceTree = "<group>"; };
+		A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+iOS8Demo.m"; sourceTree = "<group>"; };
 		A57EE7CD19C9C486006C4B75 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A57EE7F419C9C7B3006C4B75 /* iOS8FeaturesDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iOS8FeaturesDemo.entitlements; sourceTree = "<group>"; };
 		A57EE7F519C9C80F006C4B75 /* TodayExtensionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayExtensionDemoViewController.h; sourceTree = "<group>"; };
@@ -222,6 +257,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A539312F19D1462300072A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57EE7F919C9C882006C4B75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +303,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A539313319D1462300072A6C /* Anonymous */ = {
+			isa = PBXGroup;
+			children = (
+				A539314319D146E600072A6C /* MLIMGURUploader.h */,
+				A539314419D146E600072A6C /* MLIMGURUploader.m */,
+				A539313619D1462300072A6C /* ShareViewController.h */,
+				A539313719D1462300072A6C /* ShareViewController.m */,
+				A539314919D17B0200072A6C /* DescriptionViewController.h */,
+				A539314A19D17B0200072A6C /* DescriptionViewController.m */,
+				A539313919D1462300072A6C /* MainInterface.storyboard */,
+				A539313419D1462300072A6C /* Supporting Files */,
+				A539314C19D18C4C00072A6C /* UINavigationBar+iOS8Demo.h */,
+				A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */,
+			);
+			path = Anonymous;
+			sourceTree = "<group>";
+		};
+		A539313419D1462300072A6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539313519D1462300072A6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A57EE7FE19C9C882006C4B75 /* TodayExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +379,7 @@
 				A57EE7FE19C9C882006C4B75 /* TodayExtensionDemo */,
 				A5C9EAAD19CB1AF600BD4EC4 /* InternetSlangKeyboard */,
 				A586EB9C19CC5BAB005A215A /* TranslateActionDemo */,
+				A539313319D1462300072A6C /* Anonymous */,
 				A5D00D5019C96C0D00B9C669 /* Frameworks */,
 				A584A30C19C6FEEC009B1B68 /* iOS8FeaturesDemo */,
 				A584A32319C6FEEC009B1B68 /* iOS8FeaturesDemoTests */,
@@ -327,6 +395,7 @@
 				A57EE7FC19C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex */,
 				A5C9EAAC19CB1AF500BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex */,
 				A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */,
+				A539313219D1462300072A6C /* Anonymous.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,6 +510,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A539313119D1462300072A6C /* Anonymous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539314219D1462300072A6C /* Build configuration list for PBXNativeTarget "Anonymous" */;
+			buildPhases = (
+				A539312E19D1462300072A6C /* Sources */,
+				A539312F19D1462300072A6C /* Frameworks */,
+				A539313019D1462300072A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anonymous;
+			productName = Anonymous;
+			productReference = A539313219D1462300072A6C /* Anonymous.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A57EE7FB19C9C882006C4B75 /* TodayExtensionDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A57EE80B19C9C882006C4B75 /* Build configuration list for PBXNativeTarget "TodayExtensionDemo" */;
@@ -476,6 +562,8 @@
 				A5C9EAB719CB1AF600BD4EC4 /* PBXTargetDependency */,
 				A586EBA519CC5BAB005A215A /* PBXTargetDependency */,
 				A586EBA819CC5BAB005A215A /* PBXTargetDependency */,
+				A539313C19D1462300072A6C /* PBXTargetDependency */,
+				A539313F19D1462300072A6C /* PBXTargetDependency */,
 			);
 			name = iOS8FeaturesDemo;
 			productName = iOS8FeaturesDemo;
@@ -545,6 +633,10 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Satheeshwaran;
 				TargetAttributes = {
+					A539313119D1462300072A6C = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = LSVVD8ZPH6;
+					};
 					A57EE7FB19C9C882006C4B75 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = LSVVD8ZPH6;
@@ -595,11 +687,21 @@
 				A57EE7FB19C9C882006C4B75 /* TodayExtensionDemo */,
 				A5C9EAAB19CB1AF500BD4EC4 /* InternetSlangKeyboard */,
 				A586EB9A19CC5BAA005A215A /* TranslateActionDemo */,
+				A539313119D1462300072A6C /* Anonymous */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A539313019D1462300072A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539313A19D1462300072A6C /* MainInterface.storyboard in Resources */,
+				A539314619D14EA600072A6C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57EE7FA19C9C882006C4B75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -613,6 +715,7 @@
 				A57EE84219C9CBDA006C4B75 /* weather-shower.png in Resources */,
 				A57EE83D19C9CBDA006C4B75 /* weather-rain-night@2x.png in Resources */,
 				A57EE83E19C9CBDA006C4B75 /* weather-rain.png in Resources */,
+				A539314719D14EA800072A6C /* Images.xcassets in Resources */,
 				A57EE83319C9CBDA006C4B75 /* weather-clear@2x.png in Resources */,
 				A57EE83219C9CBDA006C4B75 /* weather-clear.png in Resources */,
 				A57EE83519C9CBDA006C4B75 /* weather-few-night@2x.png in Resources */,
@@ -663,12 +766,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C9EACB19CB1D2000BD4EC4 /* CustomKeyBoardView.xib in Resources */,
+				A539314819D14EA900072A6C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A539312E19D1462300072A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539313819D1462300072A6C /* ShareViewController.m in Sources */,
+				A539314519D146E600072A6C /* MLIMGURUploader.m in Sources */,
+				A539314B19D17B0300072A6C /* DescriptionViewController.m in Sources */,
+				A539314E19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57EE7F819C9C882006C4B75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,6 +839,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A539313C19D1462300072A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539313119D1462300072A6C /* Anonymous */;
+			targetProxy = A539313B19D1462300072A6C /* PBXContainerItemProxy */;
+		};
+		A539313F19D1462300072A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539313119D1462300072A6C /* Anonymous */;
+			targetProxy = A539313E19D1462300072A6C /* PBXContainerItemProxy */;
+		};
 		A57EE80719C9C882006C4B75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A57EE7FB19C9C882006C4B75 /* TodayExtensionDemo */;
@@ -783,6 +908,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A539314019D1462300072A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Anonymous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A539314119D1462300072A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Anonymous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		A57EE80C19C9C882006C4B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1028,6 +1187,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A539314219D1462300072A6C /* Build configuration list for PBXNativeTarget "Anonymous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539314019D1462300072A6C /* Debug */,
+				A539314119D1462300072A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A57EE80B19C9C882006C4B75 /* Build configuration list for PBXNativeTarget "TodayExtensionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
