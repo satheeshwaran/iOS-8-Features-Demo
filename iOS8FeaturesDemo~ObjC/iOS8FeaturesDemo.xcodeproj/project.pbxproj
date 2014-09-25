@@ -19,7 +19,15 @@
 		A539314719D14EA800072A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
 		A539314819D14EA900072A6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A584A31A19C6FEEC009B1B68 /* Images.xcassets */; };
 		A539314B19D17B0300072A6C /* DescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539314A19D17B0200072A6C /* DescriptionViewController.m */; };
-		A539314E19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */; };
+		A539BE7219D42AF100C9B5ED /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539BE7119D42AF100C9B5ED /* PhotosUI.framework */; };
+		A539BE7419D42AF100C9B5ED /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539BE7319D42AF100C9B5ED /* Photos.framework */; };
+		A539BE7A19D42AF100C9B5ED /* PhotoEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A539BE7919D42AF100C9B5ED /* PhotoEditingViewController.m */; };
+		A539BE7C19D42AF100C9B5ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A539BE7B19D42AF100C9B5ED /* MainInterface.storyboard */; };
+		A539BE7F19D42AF100C9B5ED /* AddMoustacheFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A539BE7019D42AF100C9B5ED /* AddMoustacheFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A539BE8619D4451E00C9B5ED /* m1.png in Resources */ = {isa = PBXBuildFile; fileRef = A539BE8519D4451E00C9B5ED /* m1.png */; };
+		A539BE8819D4457E00C9B5ED /* m2.png in Resources */ = {isa = PBXBuildFile; fileRef = A539BE8719D4457E00C9B5ED /* m2.png */; };
+		A539BE8A19D4458600C9B5ED /* m3.png in Resources */ = {isa = PBXBuildFile; fileRef = A539BE8919D4458600C9B5ED /* m3.png */; };
+		A539BE8C19D4458D00C9B5ED /* m4.png in Resources */ = {isa = PBXBuildFile; fileRef = A539BE8B19D4458D00C9B5ED /* m4.png */; };
 		A57EE7F719C9C80F006C4B75 /* TodayExtensionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57EE7F619C9C80F006C4B75 /* TodayExtensionDemoViewController.m */; };
 		A57EE7FD19C9C882006C4B75 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57EE7CD19C9C486006C4B75 /* NotificationCenter.framework */; };
 		A57EE80819C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A57EE7FC19C9C882006C4B75 /* com.satheeshwaran.iOS8FeaturesDemo.TodayExtensionDemo.appex */; };
@@ -84,6 +92,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A539313119D1462300072A6C;
 			remoteInfo = Anonymous;
+		};
+		A539BE7D19D42AF100C9B5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539BE6F19D42AF100C9B5ED;
+			remoteInfo = AddMoustacheFilter;
+		};
+		A539BE8019D42AF100C9B5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A584A30219C6FEEC009B1B68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A539BE6F19D42AF100C9B5ED;
+			remoteInfo = AddMoustacheFilter;
 		};
 		A57EE80619C9C882006C4B75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -157,6 +179,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				A539BE7F19D42AF100C9B5ED /* AddMoustacheFilter.appex in Embed App Extensions */,
 				A539313D19D1462300072A6C /* Anonymous.appex in Embed App Extensions */,
 				A5C9EAB519CB1AF600BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex in Embed App Extensions */,
 				A586EBA619CC5BAB005A215A /* TranslateActionDemo.appex in Embed App Extensions */,
@@ -182,8 +205,17 @@
 		A539314419D146E600072A6C /* MLIMGURUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLIMGURUploader.m; sourceTree = "<group>"; };
 		A539314919D17B0200072A6C /* DescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionViewController.h; sourceTree = "<group>"; };
 		A539314A19D17B0200072A6C /* DescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionViewController.m; sourceTree = "<group>"; };
-		A539314C19D18C4C00072A6C /* UINavigationBar+iOS8Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+iOS8Demo.h"; sourceTree = "<group>"; };
-		A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+iOS8Demo.m"; sourceTree = "<group>"; };
+		A539BE7019D42AF100C9B5ED /* AddMoustacheFilter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AddMoustacheFilter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A539BE7119D42AF100C9B5ED /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		A539BE7319D42AF100C9B5ED /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A539BE7719D42AF100C9B5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A539BE7819D42AF100C9B5ED /* PhotoEditingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditingViewController.h; sourceTree = "<group>"; };
+		A539BE7919D42AF100C9B5ED /* PhotoEditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditingViewController.m; sourceTree = "<group>"; };
+		A539BE7B19D42AF100C9B5ED /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		A539BE8519D4451E00C9B5ED /* m1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m1.png; sourceTree = "<group>"; };
+		A539BE8719D4457E00C9B5ED /* m2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m2.png; sourceTree = "<group>"; };
+		A539BE8919D4458600C9B5ED /* m3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m3.png; sourceTree = "<group>"; };
+		A539BE8B19D4458D00C9B5ED /* m4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m4.png; sourceTree = "<group>"; };
 		A57EE7CD19C9C486006C4B75 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A57EE7F419C9C7B3006C4B75 /* iOS8FeaturesDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iOS8FeaturesDemo.entitlements; sourceTree = "<group>"; };
 		A57EE7F519C9C80F006C4B75 /* TodayExtensionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayExtensionDemoViewController.h; sourceTree = "<group>"; };
@@ -264,6 +296,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A539BE6D19D42AF100C9B5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539BE7219D42AF100C9B5ED /* PhotosUI.framework in Frameworks */,
+				A539BE7419D42AF100C9B5ED /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A57EE7F919C9C882006C4B75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,8 +355,6 @@
 				A539314A19D17B0200072A6C /* DescriptionViewController.m */,
 				A539313919D1462300072A6C /* MainInterface.storyboard */,
 				A539313419D1462300072A6C /* Supporting Files */,
-				A539314C19D18C4C00072A6C /* UINavigationBar+iOS8Demo.h */,
-				A539314D19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m */,
 			);
 			path = Anonymous;
 			sourceTree = "<group>";
@@ -324,6 +363,29 @@
 			isa = PBXGroup;
 			children = (
 				A539313519D1462300072A6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A539BE7519D42AF100C9B5ED /* AddMoustacheFilter */ = {
+			isa = PBXGroup;
+			children = (
+				A539BE8B19D4458D00C9B5ED /* m4.png */,
+				A539BE8919D4458600C9B5ED /* m3.png */,
+				A539BE8719D4457E00C9B5ED /* m2.png */,
+				A539BE8519D4451E00C9B5ED /* m1.png */,
+				A539BE7819D42AF100C9B5ED /* PhotoEditingViewController.h */,
+				A539BE7919D42AF100C9B5ED /* PhotoEditingViewController.m */,
+				A539BE7B19D42AF100C9B5ED /* MainInterface.storyboard */,
+				A539BE7619D42AF100C9B5ED /* Supporting Files */,
+			);
+			path = AddMoustacheFilter;
+			sourceTree = "<group>";
+		};
+		A539BE7619D42AF100C9B5ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A539BE7719D42AF100C9B5ED /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,6 +442,7 @@
 				A5C9EAAD19CB1AF600BD4EC4 /* InternetSlangKeyboard */,
 				A586EB9C19CC5BAB005A215A /* TranslateActionDemo */,
 				A539313319D1462300072A6C /* Anonymous */,
+				A539BE7519D42AF100C9B5ED /* AddMoustacheFilter */,
 				A5D00D5019C96C0D00B9C669 /* Frameworks */,
 				A584A30C19C6FEEC009B1B68 /* iOS8FeaturesDemo */,
 				A584A32319C6FEEC009B1B68 /* iOS8FeaturesDemoTests */,
@@ -396,6 +459,7 @@
 				A5C9EAAC19CB1AF500BD4EC4 /* com.satheeshwaran.ios8featuresdemo.InternetSlangKeyboard.appex */,
 				A586EB9B19CC5BAA005A215A /* TranslateActionDemo.appex */,
 				A539313219D1462300072A6C /* Anonymous.appex */,
+				A539BE7019D42AF100C9B5ED /* AddMoustacheFilter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -503,6 +567,8 @@
 			isa = PBXGroup;
 			children = (
 				A57EE7CD19C9C486006C4B75 /* NotificationCenter.framework */,
+				A539BE7119D42AF100C9B5ED /* PhotosUI.framework */,
+				A539BE7319D42AF100C9B5ED /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -525,6 +591,23 @@
 			name = Anonymous;
 			productName = Anonymous;
 			productReference = A539313219D1462300072A6C /* Anonymous.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A539BE6F19D42AF100C9B5ED /* AddMoustacheFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A539BE8219D42AF100C9B5ED /* Build configuration list for PBXNativeTarget "AddMoustacheFilter" */;
+			buildPhases = (
+				A539BE6C19D42AF100C9B5ED /* Sources */,
+				A539BE6D19D42AF100C9B5ED /* Frameworks */,
+				A539BE6E19D42AF100C9B5ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddMoustacheFilter;
+			productName = AddMoustacheFilter;
+			productReference = A539BE7019D42AF100C9B5ED /* AddMoustacheFilter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		A57EE7FB19C9C882006C4B75 /* TodayExtensionDemo */ = {
@@ -564,6 +647,8 @@
 				A586EBA819CC5BAB005A215A /* PBXTargetDependency */,
 				A539313C19D1462300072A6C /* PBXTargetDependency */,
 				A539313F19D1462300072A6C /* PBXTargetDependency */,
+				A539BE7E19D42AF100C9B5ED /* PBXTargetDependency */,
+				A539BE8119D42AF100C9B5ED /* PBXTargetDependency */,
 			);
 			name = iOS8FeaturesDemo;
 			productName = iOS8FeaturesDemo;
@@ -637,6 +722,10 @@
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = LSVVD8ZPH6;
 					};
+					A539BE6F19D42AF100C9B5ED = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = LSVVD8ZPH6;
+					};
 					A57EE7FB19C9C882006C4B75 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = LSVVD8ZPH6;
@@ -688,6 +777,7 @@
 				A5C9EAAB19CB1AF500BD4EC4 /* InternetSlangKeyboard */,
 				A586EB9A19CC5BAA005A215A /* TranslateActionDemo */,
 				A539313119D1462300072A6C /* Anonymous */,
+				A539BE6F19D42AF100C9B5ED /* AddMoustacheFilter */,
 			);
 		};
 /* End PBXProject section */
@@ -699,6 +789,18 @@
 			files = (
 				A539313A19D1462300072A6C /* MainInterface.storyboard in Resources */,
 				A539314619D14EA600072A6C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539BE6E19D42AF100C9B5ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539BE8A19D4458600C9B5ED /* m3.png in Resources */,
+				A539BE8619D4451E00C9B5ED /* m1.png in Resources */,
+				A539BE7C19D42AF100C9B5ED /* MainInterface.storyboard in Resources */,
+				A539BE8819D4457E00C9B5ED /* m2.png in Resources */,
+				A539BE8C19D4458D00C9B5ED /* m4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,7 +882,14 @@
 				A539313819D1462300072A6C /* ShareViewController.m in Sources */,
 				A539314519D146E600072A6C /* MLIMGURUploader.m in Sources */,
 				A539314B19D17B0300072A6C /* DescriptionViewController.m in Sources */,
-				A539314E19D18C4C00072A6C /* UINavigationBar+iOS8Demo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A539BE6C19D42AF100C9B5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A539BE7A19D42AF100C9B5ED /* PhotoEditingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +957,16 @@
 			isa = PBXTargetDependency;
 			target = A539313119D1462300072A6C /* Anonymous */;
 			targetProxy = A539313E19D1462300072A6C /* PBXContainerItemProxy */;
+		};
+		A539BE7E19D42AF100C9B5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539BE6F19D42AF100C9B5ED /* AddMoustacheFilter */;
+			targetProxy = A539BE7D19D42AF100C9B5ED /* PBXContainerItemProxy */;
+		};
+		A539BE8119D42AF100C9B5ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A539BE6F19D42AF100C9B5ED /* AddMoustacheFilter */;
+			targetProxy = A539BE8019D42AF100C9B5ED /* PBXContainerItemProxy */;
 		};
 		A57EE80719C9C882006C4B75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -935,6 +1054,36 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Anonymous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A539BE8319D42AF100C9B5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AddMoustacheFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A539BE8419D42AF100C9B5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AddMoustacheFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1192,6 +1341,15 @@
 			buildConfigurations = (
 				A539314019D1462300072A6C /* Debug */,
 				A539314119D1462300072A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A539BE8219D42AF100C9B5ED /* Build configuration list for PBXNativeTarget "AddMoustacheFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A539BE8319D42AF100C9B5ED /* Debug */,
+				A539BE8419D42AF100C9B5ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

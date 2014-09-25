@@ -95,7 +95,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 
 
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Upload Failed" message:[NSString stringWithFormat:@"%@ (Status code %d)", [error localizedDescription], status] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Upload Failed" message:[NSString stringWithFormat:@"%@ (Status code %ld)", [error localizedDescription], (long)status] preferredStyle:UIAlertControllerStyleAlert];
                 
                 UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                     

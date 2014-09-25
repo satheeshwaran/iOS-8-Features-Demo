@@ -73,22 +73,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CustomKeyboardDemo/KeyboardViewController.m"
-            timestampString = "432726999.02129"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "-buttonPressed:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TranslateActionDemo/ActionViewController.m"
             timestampString = "432827842.96809"
             startingColumnNumber = "9223372036854775807"
@@ -209,36 +193,6 @@
             endingLineNumber = "63"
             landmarkName = "-didSelectPost"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.38179"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "118">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke_2"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.381974"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "63">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,36 +241,6 @@
             endingLineNumber = "95"
             landmarkName = "-didSelectPost"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke82"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.385782"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "113">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke_283"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.38597"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -333,36 +257,6 @@
             endingLineNumber = "66"
             landmarkName = "-didSelectPost"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke_2"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.387697"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "69">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__36-[ShareViewController didSelectPost]_block_invoke_3"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/ShareViewController.m"
-                  timestampString = "433165628.387875"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -395,36 +289,6 @@
             endingLineNumber = "78"
             landmarkName = "+uploadPhoto:title:description:imgurClientID:completionBlock:failureBlock:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[MLIMGURUploader uploadPhoto:title:description:imgurClientID:completionBlock:failureBlock:]"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/MLIMGURUploader.m"
-                  timestampString = "433165628.390479"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "3315">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__92+[MLIMGURUploader uploadPhoto:title:description:imgurClientID:completionBlock:failureBlock:]_block_invoke"
-                  moduleName = "Anonymous"
-                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/Anonymous/MLIMGURUploader.m"
-                  timestampString = "433165628.390673"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "117">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -449,13 +313,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Anonymous/UINavigationBar+iOS8Demo.m"
-            timestampString = "433163431.583918"
+            filePath = "Anonymous/ShareViewController.m"
+            timestampString = "433165083.890453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "-drawRect:"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -465,13 +329,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Anonymous/ShareViewController.m"
-            timestampString = "433165083.890453"
+            filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
+            timestampString = "433342947.877847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
+            timestampString = "433342974.944502"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "-markFaces:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
