@@ -8,7 +8,8 @@ A sample project that covers most new features introduced in iOS 8 and the list 
  <br/><br/> <strong>2. UIAlertControllerStyleAlert</strong>
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/2-AlertController.png"/>
 <br/><br/> <strong>3. UIAlertControllerStyleActionSheet</strong>
-  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/2-AlertC<br/><br/> <strong>4. UISPliViewController in iPhone</strong>
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/2-AlertControllerStyleActionSheet.png"/>
+  <br/><br/> <strong>4. UISPliViewController in iPhone</strong>
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/3-SplitViewContorllerIniPhone.png"/>
 <br/><br/> <strong>5. UIVisualEffectsView</strong>
  <br/><br/>
