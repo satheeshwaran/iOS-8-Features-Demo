@@ -41,3 +41,9 @@ A sample project that covers most new features introduced in iOS 8 and the list 
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemConfigurationItem.png"/>
     <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemCompletionHandler.png"/>
   <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/8-ShareActionItemCompletionCheck.png"/>
+    <br/><br/> <strong>9.Photo Editing Extension</strong>
+    <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/9-PhotoEditingExtension-AppDisplayed.png"/> 
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/9-PhotoEditingExtension-Started.png"/> 
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/9-PhotoEditingExtension-SelectMustached.png"/>
+    <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/9-PhotoEditingExtension-SaveFromExtension.png"/>
+  <br/><br/><img src="https://raw.githubusercontent.com/satheeshwaran/iOS-8-Features-Demo/master/Screenshots/9-PhotoEditingExtension-SavedOnDisk.png"/>
