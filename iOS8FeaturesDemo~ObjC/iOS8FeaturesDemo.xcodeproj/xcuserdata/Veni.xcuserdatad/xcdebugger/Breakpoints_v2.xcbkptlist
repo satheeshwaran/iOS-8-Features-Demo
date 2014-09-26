@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
-            timestampString = "433342947.877847"
+            timestampString = "433419165.817659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,13 +346,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
-            timestampString = "433342974.944502"
+            timestampString = "433419919.957079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-markFaces:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
+            timestampString = "433419919.957079"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-startContentEditingWithInput:placeholderImage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AddMoustacheFilter/PhotoEditingViewController.m"
+            timestampString = "433419919.957079"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "-drawMoustacheOnImage:withFrame:andAngele:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PhotoEditingViewController markFaces:]"
+                  moduleName = "AddMoustacheFilter"
+                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/AddMoustacheFilter/PhotoEditingViewController.m"
+                  timestampString = "433419920.644625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "1820">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PhotoEditingViewController markFaces:]"
+                  moduleName = "AddMoustacheFilter"
+                  urlString = "file:///Users/Veni/Documents/iOS%208%20Features%20Demo/iOS8FeaturesDemo~ObjC/AddMoustacheFilter/PhotoEditingViewController.m"
+                  timestampString = "433419920.645127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "1961">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

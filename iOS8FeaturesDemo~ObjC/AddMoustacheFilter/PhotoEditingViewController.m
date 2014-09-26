@@ -10,6 +10,7 @@
 #import <Photos/Photos.h>
 #import <PhotosUI/PhotosUI.h>
 #import <CoreImage/CoreImage.h>
+#import "Moustache.h"
 
 @interface PhotoEditingViewController () <PHContentEditingController>
 @property (strong) PHContentEditingInput *input;
@@ -18,6 +19,7 @@
 @property (nonatomic,weak)IBOutlet UICollectionView *moustacheSelectionView;
 @property (nonatomic, strong) UIImage *inputImage;
 @property (nonatomic,strong)NSArray *moustachesArray;
+@property (nonatomic,strong)NSMutableArray *editsArray;
 @property (nonatomic,copy)NSString *selectedMoustacheName;
 @end
 
@@ -39,10 +41,12 @@
     [self.view addConstraints:verticalConstraints];
     [self.view addConstraints:horizontalConstraints];
     
-    self.moustachesArray = @[@"m1.png",@"m2.png",@"m3.png",@"m4.png",];
+    self.moustachesArray = @[@"cat8.png",@"big84.png",@"cat8.png",@"curled1.png",@"curled2.png",@"curled3.png",@"curled4.png",@"curling.png",@"curly.png",@"curly1.png",@"curve21.png",@"curve22.png",@"curved7.png",@"curvy.png",@"cut16.png",@"double26.png",@"facial2.png",@"irregular6.png",@"leaf11.png",@"long2.png",@"male86.png",@"moustache2.png",@"moustache3.png",@"moustache4.png",@"moustache5.png",@"moustache6.png",@"moustache8.png",@"mustache2.png",@"mustache3.png",@"oval3.png",@"pixel1.png",@"pixelated.png",@"round35.png",@"round36.png",@"short1.png",@"small142.png",@"straight10.png",@"thin19.png",@"thin20.png",@"thin21.png",@"thin22.png",@"thin23.png",@"triangular16.png",@"zigzag.png",@"zigzag1.png",@"zigzag2.png"];
     
     self.selectedMoustacheName = [self
                                   .moustachesArray objectAtIndex:0];
+    [self updateSelectionForCell:[self.moustacheSelectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]];
+
     // Do any additional setup after loading the view.
 }
 
@@ -81,7 +85,7 @@
     //[self updateFilterPreview];
     self.bgImageView.image = placeholderImage;
     self.orignialImageView.image = placeholderImage;
-    [self markFaces:self.orignialImageView];
+    [self markFaces:self.inputImage];
 }
 
 - (void)finishContentEditingWithCompletionHandler:(void (^)(PHContentEditingOutput *))completionHandler {
@@ -92,10 +96,10 @@
         // Create editing output from the editing input.
         PHContentEditingOutput *output = [[PHContentEditingOutput alloc] initWithContentEditingInput:self.input];
         
-        // Provide new adjustments and render output to given location.
-        // output.adjustmentData = <#new adjustment data#>;
-        // NSData *renderedJPEGData = <#output JPEG#>;
-        // [renderedJPEGData writeToURL:output.renderedContentURL atomically:YES];
+        NSData *adjustment = [NSKeyedArchiver archivedDataWithRootObject:self.editsArray];
+        output.adjustmentData = [[PHAdjustmentData alloc]initWithFormatIdentifier:@"com.satheeshwaran.ios8featuresdemo.addmoustachefileter" formatVersion:@"1.0" data:adjustment];
+        NSData *renderedJPEGData = UIImageJPEGRepresentation(self.orignialImageView.image, 0.9);
+        [renderedJPEGData writeToURL:output.renderedContentURL atomically:YES];
         
         // Call completion handler to commit edit to Photos.
         completionHandler(output);
@@ -124,11 +128,6 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    /*NSDictionary *filterInfo = self.availableFilterInfos[indexPath.item];
-    NSString *displayName = filterInfo[kFilterInfoDisplayNameKey];
-    NSString *previewImageName = filterInfo[kFilterInfoPreviewImageKey];
-    */
-    
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoFilterCell" forIndexPath:indexPath];
     
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:999];
@@ -143,26 +142,29 @@
     return cell;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    //self.selectedFilterName = self.availableFilterInfos[indexPath.item][kFilterInfoFilterNameKey];
-    //[self updateFilter];
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
     
+    self.selectedMoustacheName = [self
+                                  .moustachesArray objectAtIndex:indexPath.row];
+    [self.orignialImageView setImage:self.inputImage];
+    
+    self.editsArray = [NSMutableArray array];
+    [self markFaces:self.inputImage];
     [self updateSelectionForCell:[collectionView cellForItemAtIndexPath:indexPath]];
-    
-    //[self updateFilterPreview];
+
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    self.selectedMoustacheName = [self
-                                  .moustachesArray objectAtIndex:indexPath.row];
+    
     [self updateSelectionForCell:[collectionView cellForItemAtIndexPath:indexPath]];
+
 }
 
 - (void)updateSelectionForCell:(UICollectionViewCell *)cell {
+    
     BOOL isSelected = cell.selected;
     
-    
-  
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:999];
     imageView.layer.borderColor = self.view.tintColor.CGColor;
     imageView.layer.borderWidth = isSelected ? 2.0 : 0.0;
@@ -171,59 +173,67 @@
     label.textColor = isSelected ? self.view.tintColor : [UIColor whiteColor];
 }
 
--(void)markFaces:(UIImageView *)facePicture
+-(void)markFaces:(UIImage *)facePicture
 {
     NSLog(@"face detection started");
     // draw a ci image from view
-    CIImage *image = [CIImage imageWithCGImage:facePicture.image.CGImage];
+    CIImage *image = [CIImage imageWithCGImage:facePicture.CGImage];
     
     
     // Create face detector with high accuracy
     CIDetector* detector = [CIDetector detectorOfType:CIDetectorTypeFace
                                               context:nil options:[NSDictionary   dictionaryWithObject:CIDetectorAccuracyHigh forKey:CIDetectorAccuracy]];
-    
-    
-    CGAffineTransform transform = CGAffineTransformMakeScale(1, -1);
-    transform = CGAffineTransformTranslate(transform,
-                                           0,-facePicture.bounds.size.height);
-    
+
     // Get features from the image
     NSArray* features = [detector featuresInImage:image];
     for(CIFaceFeature* faceFeature in features) {
         
         // Transform CoreImage coordinates to UIKit
-        CGRect faceRect = CGRectApplyAffineTransform(faceFeature.bounds, transform);
-
         if (faceFeature.hasMouthPosition) {
 
-        
-        
-        UIImage *mustache = [UIImage imageNamed:self.selectedMoustacheName];
-        
-        UIImageView *mustacheview = [[UIImageView alloc] initWithImage:mustache];
-        
-        
-        mustacheview.contentMode = UIViewContentModeScaleAspectFill;
-        [mustacheview.layer setBorderColor:[[UIColor whiteColor] CGColor]];
-        [mustacheview.layer setBorderWidth:3];
-        //[mustacheview addGestureRecognizer:pancontrol];
-        //[mustacheview addGestureRecognizer:pinchcontrol];
-        //[mustacheview addGestureRecognizer:rotatecontrol];
-        mustacheview.userInteractionEnabled=YES;
-        
-        CGPoint mouthPos = CGPointApplyAffineTransform(faceFeature.mouthPosition, transform);
-        
-        
-        [mustacheview setFrame:CGRectMake(mouthPos.x, mouthPos.y,     mustacheview.frame.size.width, mustacheview.frame.size.height)];
-        [mustacheview setCenter:mouthPos];
+            
+        CGSize mustacheSize = CGSizeMake(faceFeature.bounds.size.width/1.5, faceFeature.bounds.size.height/5);
+        CGRect mustacheRect = CGRectMake(faceFeature.mouthPosition.x - (mustacheSize.width / 2),
+                                      facePicture.size.height - faceFeature.mouthPosition.y - mustacheSize.height,
+                                            mustacheSize.width,mustacheSize.height);
+            
+        CGFloat mustacheAngle;
+            
+        if([faceFeature hasFaceAngle])
+            {
+                mustacheAngle = (faceFeature.faceAngle) * 3.14 / 180.0;
+            }
+        else {
+                mustacheAngle = CGFLOAT_MIN;
+                NSLog(@"Mustache angle not found, using \(mustacheAngle)");
+            }
 
-        [self.orignialImageView addSubview:mustacheview];
-        [self.orignialImageView bringSubviewToFront:mustacheview];
+            [self drawMoustacheOnImage:self.orignialImageView.image withFrame:mustacheRect andAngele:mustacheAngle];
+            
+            Moustache *moustacheObject = [[Moustache alloc]initWithFrame:mustacheRect andAngle:mustacheAngle];
+            [self.editsArray addObject:moustacheObject];
         
         }
         
     }
     
+}
+
+- (void)drawMoustacheOnImage:(UIImage *)image withFrame:(CGRect)frm andAngele:(CGFloat)angle
+{
+    UIGraphicsBeginImageContextWithOptions(image.size, YES, image.scale);
+    [image drawAtPoint:CGPointZero];
+    
+    UIImage *moustacheImage = [UIImage imageNamed:self.selectedMoustacheName];
+    [moustacheImage drawInRect:frm];
+   
+    
+    UIImage *generatedImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+
+    [self.orignialImageView setImage:generatedImage];
+
 }
 
 
